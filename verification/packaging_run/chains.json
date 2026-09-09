@@ -1,0 +1,121 @@
+{
+  "status": "PASS",
+  "arithmetic": "exact GF(2), integer XOR",
+  "scope": "finite structural checks only; not asymptotic qLTC verification",
+  "base_size": 32,
+  "cases": [
+    {
+      "degree": 2,
+      "local_row_counts": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "original": {
+        "dimensions": [
+          512,
+          2048,
+          3072,
+          2048,
+          512
+        ],
+        "differential_ranks": [
+          510,
+          1530,
+          1530,
+          510
+        ],
+        "homology_dimensions": [
+          2,
+          8,
+          12,
+          8,
+          2
+        ],
+        "square_zero_columns": 5632
+      },
+      "shifted": {
+        "dimensions": [
+          512,
+          2048,
+          3072,
+          2048,
+          512
+        ],
+        "differential_ranks": [
+          510,
+          1530,
+          1530,
+          510
+        ],
+        "homology_dimensions": [
+          2,
+          8,
+          12,
+          8,
+          2
+        ],
+        "square_zero_columns": 5632
+      },
+      "shifting_homology_identity": true
+    },
+    {
+      "degree": 3,
+      "local_row_counts": [
+        1,
+        1,
+        2,
+        2
+      ],
+      "original": {
+        "dimensions": [
+          2048,
+          9216,
+          14976,
+          10368,
+          2592
+        ],
+        "differential_ranks": [
+          2038,
+          7114,
+          7722,
+          2582
+        ],
+        "homology_dimensions": [
+          10,
+          64,
+          140,
+          64,
+          10
+        ],
+        "square_zero_columns": 26240
+      },
+      "shifted": {
+        "dimensions": [
+          1152,
+          4992,
+          7712,
+          4992,
+          1152
+        ],
+        "differential_ranks": [
+          1142,
+          3786,
+          3786,
+          1142
+        ],
+        "homology_dimensions": [
+          10,
+          64,
+          140,
+          64,
+          10
+        ],
+        "square_zero_columns": 13856
+      },
+      "shifting_homology_identity": true
+    }
+  ],
+  "seconds": 0.5900571500000069
+}

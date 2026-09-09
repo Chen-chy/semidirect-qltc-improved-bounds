@@ -1,0 +1,12 @@
+[
+  {"id":"CLASSICAL_FAMILY","status":"OPEN","description":"Construct or import formally the Kaufman-Lubotzky family, evaluation orbit, and uniform dimension bounds."},
+  {"id":"SEMIDIRECT_SPECTRUM","status":"OPEN","description":"Prove the evaluation-orbit spectral estimate, cloud walk estimate, and uniform literal-generator lift."},
+  {"id":"LOCAL_ROBUSTNESS","status":"OPEN","description":"Formalize the fixed characteristic-two local matrices and simultaneous two-way robustness inputs."},
+  {"id":"CUBICAL_BINARY_CONSTRUCTION","status":"OPEN","description":"Construct the flagged cubical chain, its boundary maps, binary restriction of scalars, and actual binary transpose presentation."},
+  {"id":"DIMENSION_AND_INCIDENCE","status":"OPEN","description":"Derive exact listed dimensions, shifted face counts, block-to-binary metric comparison, and sparse rows/columns from that construction."},
+  {"id":"DLV_GLOBAL_TRANSFER","status":"OPEN","description":"Formalize and apply both global expansion and distance estimates at t=4,j=2; currently hX, hZ, hd are explicit premises."},
+  {"id":"DLV_SHIFTING_EQUIVALENCE","status":"OPEN","description":"Construct the actual homology equivalence e supplied to the shifted-rate theorem, including the coefficient-field conversion."},
+  {"id":"UNIFORM_FAMILY_EXISTENCE","status":"OPEN","description":"Exhibit a single fixed set of local data and a sequence of actual semidirect construction instances satisfying all premises uniformly."},
+  {"id":"QUANTUM_PROJECTORS","status":"OPEN","description":"Construct the stabilizer-syndrome projectors and prove the distance-observable/Loewner-order statement for arbitrary quantum states."},
+  {"id":"LEAN_KERNEL_VALIDATION","status":"OPEN","description":"Run the pinned Lean toolchain, fix every elaboration or proof error, and complete the transitive axiom audit."}
+]

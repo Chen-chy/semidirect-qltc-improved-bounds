@@ -1,0 +1,22 @@
+{
+  "checked_utc_date": "2026-09-09",
+  "remote_execution_performed": false,
+  "actions": [
+    {
+      "name": "actions/checkout",
+      "version": "v7.0.1",
+      "source": "https://github.com/actions/checkout/releases/tag/v7.0.1"
+    },
+    {
+      "name": "actions/setup-python",
+      "version": "v7.0.0",
+      "source": "https://github.com/actions/setup-python/releases/tag/v7.0.0"
+    }
+  ],
+  "python_matrix": [
+    "3.10",
+    "3.13"
+  ],
+  "runner": "ubuntu-24.04",
+  "note": "Explicit release tags; not a claim of immutable commit pinning or an executed GitHub workflow."
+}

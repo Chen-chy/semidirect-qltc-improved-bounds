@@ -1,0 +1,13 @@
+{
+  "all_cosets_well_defined": true,
+  "cross_direction_commutation": true,
+  "direction_count": 4,
+  "free_on_every_coset": true,
+  "group_order": 4096,
+  "nonnormality_witness": true,
+  "orbit_size": 8,
+  "orbits_per_direction": 4,
+  "quotient_size": 32,
+  "subgroup_order": 128,
+  "t": 4
+}

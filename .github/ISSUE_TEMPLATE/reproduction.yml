@@ -1,0 +1,24 @@
+name: Reproduction failure / 复现问题
+description: Report a failing finite check, command, or documentation link.
+title: '[Reproduce] '
+body:
+  - type: input
+    id: environment
+    attributes:
+      label: Environment / 环境
+      placeholder: 'Python version, OS, commit or source snapshot version'
+    validations:
+      required: true
+  - type: textarea
+    id: command
+    attributes:
+      label: Exact command and output / 命令与输出
+      render: text
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected result and local modifications / 预期与本地改动
+    validations:
+      required: false

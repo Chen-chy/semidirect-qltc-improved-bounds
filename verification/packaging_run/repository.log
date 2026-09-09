@@ -1,0 +1,12 @@
+{
+  "result": "PASS_REPOSITORY_CHECKS_ONLY",
+  "markdown_files": 18,
+  "local_links_checked": 77,
+  "python_syntax_files": 12,
+  "claims": 14,
+  "lean_public_declarations_in_source": 104,
+  "lean_lexical_screen": "PASS_LEXICAL_ONLY",
+  "lean_kernel": "NOT_RUN",
+  "external_links_fetched": false,
+  "errors": []
+}

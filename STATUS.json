@@ -1,0 +1,37 @@
+{
+  "version": "0.1.0-draft",
+  "scope": {
+    "cubical_dimension": 4,
+    "qubit_degree": 2
+  },
+  "mathematical_manuscript": "DERIVATION_WITH_EXPLICIT_EXTERNAL_INPUTS",
+  "finite_checks": {
+    "status": "PASS_FINITE_AND_REPOSITORY_CHECKS_ONLY",
+    "record": "verification/packaging_run/summary.json",
+    "python": "3.13.5",
+    "unit_tests_passed": 21,
+    "reference_comparisons": {
+      "geometry": "PASS",
+      "chains": "PASS",
+      "parameters": "PASS"
+    },
+    "baselines_unchanged": true
+  },
+  "lean": {
+    "kernel": "NOT_RUN",
+    "axiom_audit": "NOT_RUN",
+    "full_existence": "NOT_PROVED",
+    "source": "formalization/lean4",
+    "toolchain": "leanprover/lean4:v4.19.0"
+  },
+  "github": {
+    "repository_created": false,
+    "pushed": false,
+    "actions_execution": "NOT_RUN",
+    "workflow_scope": "repository and finite structural checks only"
+  },
+  "author_metadata": "OWNER_DECISION_REQUIRED",
+  "license": "NOT_SELECTED",
+  "peer_review_claimed": false,
+  "novelty_claimed": false
+}

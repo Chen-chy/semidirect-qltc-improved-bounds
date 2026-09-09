@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "arithmetic": "exact rational/integer identities",
+  "nu": "1/32",
+  "beta": "47551/65536",
+  "rate_lower_beta_over_24": "47551/1572864",
+  "cycle_first_term_denominator": "2^76 * D^29",
+  "cycle_second_term_denominator": "3 * 2^20 * D^7",
+  "binary_distance_coefficient": "gamma / (2^20 * ell * D^10)",
+  "note": "Checks substitutions only; these do not verify the cited external theorems."
+}

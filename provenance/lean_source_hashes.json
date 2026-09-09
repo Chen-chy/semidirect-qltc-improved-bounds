@@ -1,0 +1,15 @@
+{
+  "formalization/lean4/SemidirectQLTC/CSS.lean": "adb30b37eda9ba0065c4071d920204f9ec04cadc4f3205fdee0024eb45f86cb9",
+  "formalization/lean4/SemidirectQLTC/Filling.lean": "d3efc570d3c37ef8a51e8c3a15f04f9ce7bde44c3dfbb82720c2ae8e5a967d3b",
+  "formalization/lean4/SemidirectQLTC/Geometry.lean": "da01633161fc3c193be4b6a8c52a999e5f4310957c8b7dd43c82bfb9eabd81ed",
+  "formalization/lean4/SemidirectQLTC/Hamming.lean": "53b589b2caddfeb484e38dbc402701550a53401ade6e540b9680414571a9d4e6",
+  "formalization/lean4/SemidirectQLTC/Homology.lean": "9d698a18d87147ceea80a1968ab841b0b692550febaebf2268f6cb2910ee9b0f",
+  "formalization/lean4/T4/Assembly.lean": "6ea8f015a38e6ae38787640fa5df561e9171ef7b3ad2295217d56112aef91c03",
+  "formalization/lean4/T4/BinaryPresentation.lean": "6cffd5e2f4859a7fa3856dd5ade19fe15d02d81bc5eea147d183e7d697827de4",
+  "formalization/lean4/T4/Geometry.lean": "94ac64a022fb1b9fe25c16887222884a2ea10dc8019fb3cd73a5a6f0e141a6cf",
+  "formalization/lean4/T4/MainConditional.lean": "278a502bfdc35d3e6c548a1a0129b4668f5aa9c50ba3fbf63868a1b0f805713e",
+  "formalization/lean4/T4/Scale.lean": "13b4e81c74669f87aa58582d313fe7051ae398546e912d29217184bcda5911ee",
+  "formalization/lean4/T4/ShiftedRate.lean": "0d655df556f760d12a21e25d3636ff1fe3168b49181f7cbfe591620d0723f0cb",
+  "formalization/lean4/T4.lean": "552e9edf55f780015f2f232dc7534275ec2e895e2526bdd22592eafc12748310",
+  "formalization/lean4/lakefile.lean": "4ec3f20b96f7f501a6ee9ea3bf76745603c06b51900d7b0c6495ec6dbf3d5996"
+}

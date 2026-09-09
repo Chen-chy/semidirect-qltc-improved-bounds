@@ -1,0 +1,9 @@
+# Runtime output is never a reference certificate.
+.artifacts/
+__pycache__/
+*.py[cod]
+.venv/
+.lake/
+.DS_Store
+formalization/lean4/verification/
+formalization/lean4/lake-manifest.json

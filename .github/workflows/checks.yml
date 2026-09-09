@@ -1,0 +1,45 @@
+name: Repository and finite checks (not Lean)
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  finite-checks:
+    name: Finite structural checks / Python ${{ matrix.python-version }}
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ['3.10', '3.13']
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v7.0.1
+        with:
+          persist-credentials: false
+      - name: Set up Python
+        uses: actions/setup-python@v7.0.0
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Run repository and finite checks
+        run: python scripts/verify.py
+      - name: State verification scope
+        if: always()
+        shell: bash
+        run: |
+          echo '## Scope: finite structural checks only' >> "$GITHUB_STEP_SUMMARY"
+          echo 'This workflow does not run Lean or certify the asymptotic qLTC theorem.' >> "$GITHUB_STEP_SUMMARY"
+          if test -f .artifacts/verification/summary.json; then
+            echo '```json' >> "$GITHUB_STEP_SUMMARY"
+            cat .artifacts/verification/summary.json >> "$GITHUB_STEP_SUMMARY"
+            echo '```' >> "$GITHUB_STEP_SUMMARY"
+          fi

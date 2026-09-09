@@ -1,0 +1,40 @@
+{
+  "timestamp_utc": "2026-09-09T05:04:03.745322+00:00",
+  "requested_scope": "full",
+  "toolchain": "leanprover/lean4:v4.19.0",
+  "source_scan": "PASS",
+  "kernel_status": "NOT_RUN",
+  "axiom_audit_status": "NOT_RUN",
+  "full_t4_existence_theorem": "NOT_PROVED",
+  "full_theorem_name_required": "SemidirectQLTC.T4.exists_logSquareSemidirectFamily",
+  "full_theorem_present_in_source_inventory": false,
+  "open_obligations": [
+    "CLASSICAL_FAMILY",
+    "SEMIDIRECT_SPECTRUM",
+    "LOCAL_ROBUSTNESS",
+    "CUBICAL_BINARY_CONSTRUCTION",
+    "DIMENSION_AND_INCIDENCE",
+    "DLV_GLOBAL_TRANSFER",
+    "DLV_SHIFTING_EQUIVALENCE",
+    "UNIFORM_FAMILY_EXISTENCE",
+    "QUANTUM_PROJECTORS",
+    "LEAN_KERNEL_VALIDATION"
+  ],
+  "public_theorems_in_inventory": 104,
+  "lake_found": null,
+  "lean_found": null,
+  "build": {
+    "command": [
+      "lake",
+      "build",
+      "T4"
+    ],
+    "cwd": "formalization/lean4 (original path normalized)",
+    "returncode": 127,
+    "ran": false,
+    "error": "EXECUTABLE_NOT_FOUND",
+    "log": "verification/build.log"
+  },
+  "result": "BLOCKED_NO_LAKE",
+  "exit_code": 127
+}

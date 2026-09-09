@@ -1,0 +1,26 @@
+test_null_basis_matches_exhaustive_kernel (test_algebra.BinaryAlgebraTests.test_null_basis_matches_exhaustive_kernel) ... ok
+test_null_basis_rejects_negative_degree (test_algebra.BinaryAlgebraTests.test_null_basis_rejects_negative_degree) ... ok
+test_null_basis_rejects_nonbinary_input (test_algebra.BinaryAlgebraTests.test_null_basis_rejects_nonbinary_input) ... ok
+test_null_basis_rejects_ragged_input (test_algebra.BinaryAlgebraTests.test_null_basis_rejects_ragged_input) ... ok
+test_rank_matches_exhaustive_span (test_algebra.BinaryAlgebraTests.test_rank_matches_exhaustive_span) ... ok
+test_rank_rejects_negative_column (test_algebra.BinaryAlgebraTests.test_rank_rejects_negative_column) ... ok
+test_constructor_rejects_missing_direction (test_algebra.ConstructorInputTests.test_constructor_rejects_missing_direction) ... ok
+test_constructor_rejects_out_of_range_shift (test_algebra.ConstructorInputTests.test_constructor_rejects_out_of_range_shift) ... ok
+test_constructor_rejects_repeated_generator (test_algebra.ConstructorInputTests.test_constructor_rejects_repeated_generator) ... ok
+test_action_respects_addition (test_algebra.GroupTests.test_action_respects_addition) ... ok
+test_associativity (test_algebra.GroupTests.test_associativity) ... ok
+test_direct_product_length_check (test_algebra.GroupTests.test_direct_product_length_check) ... ok
+test_identity_and_inverse (test_algebra.GroupTests.test_identity_and_inverse) ... ok
+test_public_geometry_scope_is_t4 (test_algebra.GroupTests.test_public_geometry_scope_is_t4) ... ok
+test_quotient_enumerates_every_group_element (test_algebra.GroupTests.test_quotient_enumerates_every_group_element) ... ok
+test_css_centralizer_union_weight_bounds (test_css.MetricTests.test_css_centralizer_union_weight_bounds) ... ok
+test_displayed_parameter_substitutions (test_css.MetricTests.test_displayed_parameter_substitutions) ... ok
+test_minimum_filling_equals_distance_to_kernel (test_css.MetricTests.test_minimum_filling_equals_distance_to_kernel) ... ok
+test_baseline_output_path_is_rejected (test_guards.VerificationGuardTests.test_baseline_output_path_is_rejected) ... ok
+test_optimized_standalone_chain_check_is_rejected (test_guards.VerificationGuardTests.test_optimized_standalone_chain_check_is_rejected) ... ok
+test_optimized_verifier_is_rejected (test_guards.VerificationGuardTests.test_optimized_verifier_is_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 21 tests in 4.586s
+
+OK

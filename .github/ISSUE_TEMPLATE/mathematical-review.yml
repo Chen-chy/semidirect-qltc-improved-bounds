@@ -1,0 +1,24 @@
+name: Mathematical review / 数学核验
+description: Report a possible proof gap, normalization issue, or dependency mismatch.
+title: '[Math] '
+body:
+  - type: input
+    id: claim
+    attributes:
+      label: Claim ID and location / 命题编号与位置
+      placeholder: 'Example: D1, docs/PROOF.zh-CN.md section 6'
+    validations:
+      required: true
+  - type: textarea
+    id: concern
+    attributes:
+      label: Exact statement and concern / 精确命题与疑点
+      description: Include hypotheses, normalization, and cited version when relevant.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence, counterexample, or proposed correction
+    validations:
+      required: false

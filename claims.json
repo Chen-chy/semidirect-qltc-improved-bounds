@@ -1,0 +1,166 @@
+{
+  "scope": "t=4,j=2 only",
+  "status_legend": {
+    "EXTERNAL_THEOREM": "Versioned literature input; not re-proved or Lean-formalized here",
+    "MANUSCRIPT_PROOF": "Proof written in the manuscript, not kernel-checked",
+    "MANUSCRIPT_WITH_EXTERNAL_INPUTS": "Derivation using the listed external inputs, not kernel-checked"
+  },
+  "claims": [
+    {
+      "id": "EXT-KL",
+      "title": "经典码与对称群族",
+      "location": "REFERENCES.md#r1--classical-symmetric-code-family",
+      "depends_on": [],
+      "status": "EXTERNAL_THEOREM",
+      "lean_kernel_verified": false
+    },
+    {
+      "id": "EXT-KP",
+      "title": "元组及全对偶元组的乘积扩张",
+      "location": "REFERENCES.md#r2--local-product-expansion",
+      "depends_on": [],
+      "status": "EXTERNAL_THEOREM",
+      "lean_kernel_verified": false
+    },
+    {
+      "id": "EXT-DLV",
+      "title": "局部鲁棒性、全局转移和修正版 shifting",
+      "location": "REFERENCES.md#r3--cubical-transfer-and-corrected-rate-argument",
+      "depends_on": [],
+      "status": "EXTERNAL_THEOREM",
+      "lean_kernel_verified": false
+    },
+    {
+      "id": "G1",
+      "title": "子群、陪集计数、处处自由与方向分量",
+      "location": "docs/PROOF.zh-CN.md#geometry",
+      "depends_on": [],
+      "status": "MANUSCRIPT_PROOF",
+      "lean_kernel_verified": false
+    },
+    {
+      "id": "E1",
+      "title": "lazy 半直积谱估计",
+      "location": "docs/PROOF.zh-CN.md#spectral",
+      "depends_on": [
+        "EXT-KL"
+      ],
+      "status": "MANUSCRIPT_PROOF",
+      "lean_kernel_verified": false
+    },
+    {
+      "id": "E2",
+      "title": "固定标签库与真正生成元集合",
+      "location": "docs/PROOF.zh-CN.md#labels",
+      "depends_on": [
+        "E1"
+      ],
+      "status": "MANUSCRIPT_PROOF",
+      "lean_kernel_verified": false
+    },
+    {
+      "id": "L1",
+      "title": "固定两向鲁棒局部元组和无循环选参",
+      "location": "docs/PROOF.zh-CN.md#local-codes",
+      "depends_on": [
+        "EXT-KP",
+        "EXT-DLV",
+        "E2"
+      ],
+      "status": "MANUSCRIPT_WITH_EXTERNAL_INPUTS",
+      "lean_kernel_verified": false
+    },
+    {
+      "id": "C1",
+      "title": "实际 flagged 系数复形与平方零",
+      "location": "docs/PROOF.zh-CN.md#cubical-complex",
+      "depends_on": [
+        "G1",
+        "E2",
+        "L1"
+      ],
+      "status": "MANUSCRIPT_PROOF",
+      "lean_kernel_verified": false
+    },
+    {
+      "id": "D1",
+      "title": "两扇区距离与全局扩张",
+      "location": "docs/PROOF.zh-CN.md#global-transfer",
+      "depends_on": [
+        "EXT-DLV",
+        "G1",
+        "E2",
+        "L1",
+        "C1"
+      ],
+      "status": "MANUSCRIPT_WITH_EXTERNAL_INPUTS",
+      "lean_kernel_verified": false
+    },
+    {
+      "id": "RATE1",
+      "title": "shifting 同调维数与正率",
+      "location": "docs/PROOF.zh-CN.md#rate",
+      "depends_on": [
+        "EXT-DLV",
+        "L1",
+        "C1"
+      ],
+      "status": "MANUSCRIPT_WITH_EXTERNAL_INPUTS",
+      "lean_kernel_verified": false
+    },
+    {
+      "id": "B1",
+      "title": "二元 CSS、迹对偶与局部性",
+      "location": "docs/PROOF.zh-CN.md#binary-css",
+      "depends_on": [
+        "C1",
+        "D1",
+        "RATE1"
+      ],
+      "status": "MANUSCRIPT_PROOF",
+      "lean_kernel_verified": false
+    },
+    {
+      "id": "Q1",
+      "title": "所有 Pauli 误差及任意量子态 tester",
+      "location": "docs/PROOF.zh-CN.md#quantum-tester",
+      "depends_on": [
+        "B1",
+        "D1"
+      ],
+      "status": "MANUSCRIPT_PROOF",
+      "lean_kernel_verified": false
+    },
+    {
+      "id": "A1",
+      "title": "指定无限序列和对数平方换算",
+      "location": "docs/PROOF.zh-CN.md#asymptotics",
+      "depends_on": [
+        "EXT-KL",
+        "G1",
+        "B1"
+      ],
+      "status": "MANUSCRIPT_PROOF",
+      "lean_kernel_verified": false
+    },
+    {
+      "id": "T4",
+      "title": "主定理",
+      "location": "docs/THEOREM.zh-CN.md",
+      "depends_on": [
+        "G1",
+        "E1",
+        "E2",
+        "L1",
+        "C1",
+        "D1",
+        "RATE1",
+        "B1",
+        "Q1",
+        "A1"
+      ],
+      "status": "MANUSCRIPT_WITH_EXTERNAL_INPUTS",
+      "lean_kernel_verified": false
+    }
+  ]
+}

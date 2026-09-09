@@ -1,0 +1,6 @@
+{
+  "status": "PASS",
+  "meaning": "Lexical screen only; NOT Lean elaboration or kernel checking",
+  "violations": [],
+  "public_theorems": 104
+}

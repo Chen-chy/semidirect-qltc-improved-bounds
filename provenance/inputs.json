@@ -1,0 +1,56 @@
+{
+  "package_version": "0.1.0-draft",
+  "inputs": [
+    {
+      "filename": "semidirect_qltc_research_archive.zip",
+      "bytes": 285474,
+      "sha256": "fa18709fd4c18453576e3ab7525649942f1e7f4557b871ca9722f1cde531fa66"
+    },
+    {
+      "filename": "semidirect_qltc_t4_formalization_attempt.zip",
+      "bytes": 56106,
+      "sha256": "864ae74447133e96258ad889759f5bea4078996a186e79066f3cb201aa6c7236"
+    },
+    {
+      "filename": "t4_correctness_audit.zip",
+      "bytes": 15576,
+      "sha256": "9fdd7570b178cdc3cc8dba7427168f7bec87a50d8e9d4c59f4f4c323294629f0"
+    }
+  ],
+  "transformations": [
+    {
+      "source": "t4_correctness_audit/AUDIT.zh-CN.md",
+      "target": "docs/PROOF.zh-CN.md",
+      "mode": "edited research manuscript; corrected bibliographic metadata; converted to GitHub math; standalone cubical definitions added"
+    },
+    {
+      "source": "t4_correctness_audit/semidirect_sanity.py",
+      "target": "experiments/semidirect_sanity.py",
+      "mode": "t=4-only CLI, structured output, explicit freeness and input validation"
+    },
+    {
+      "source": "t4_correctness_audit/check_t4_chains.py",
+      "target": "experiments/check_t4_chains.py",
+      "mode": "same finite construction; output path argument, input validation, optimized-Python rejection"
+    },
+    {
+      "source": "semidirect_qltc_t4/T4 and SemidirectQLTC",
+      "target": "formalization/lean4",
+      "mode": "Lean proof terms copied byte-for-byte; no new claim of compilation"
+    },
+    {
+      "source": "semidirect_qltc_t4/verification",
+      "target": "provenance/lean_attempt",
+      "mode": "selected historical records; original absolute cwd normalized"
+    }
+  ],
+  "excluded": [
+    "t=3 endpoint branches",
+    "raw conversation transcripts",
+    "third-party full-text papers",
+    "old generated caches and unrelated matrices"
+  ],
+  "author_identity_assigned": false,
+  "license_assigned": false,
+  "remote_repository_created": false
+}
